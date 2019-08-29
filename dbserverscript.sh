@@ -18,7 +18,7 @@ echo "GRANT ALL PRIVILEGES ON contactdb.* TO 'dbuser'@'%'" | mysql
 export MYSQL_PWD='mypassword'
 
 #add webuser and contactdb
-cat /vagrant/dbsetup.sql | mysql -u webuser contactdb
+cat /vagrant/dbsetup.sql | mysql -u dbuser contactdb
 
 #allow public connections
 sed -i'' -e '/bind-address/s/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
