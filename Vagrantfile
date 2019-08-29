@@ -37,7 +37,6 @@ Vagrant.configure("2") do |config|
     # from this host to the VM through the shared folder mounted in
     # the VM at /vagrant
     webserver.vm.provision "shell", path:"web1script.sh"
-    SHELL
   end
   
   
