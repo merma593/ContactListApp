@@ -15,10 +15,10 @@ echo "CREATE USER 'dbuser'@'%' IDENTIFIED BY 'mypassword';" | mysql
 
 echo "GRANT ALL PRIVELEGES ON contactdb.* TO 'dbuser'@'%'" | mysql
 
-export MYSQL_PWD='insecure_db-pw'
+export MYSQL_PWD='mypassword'
 
 #add webuser and contactdb
-cat /vagrant/setup-database.sql | mysql -u webuser contactdb
+cat /vagrant/dbsetup.sql | mysql -u webuser contactdb
 
 #allow public connections
 sed -i'' -e '/bind-address/s/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
