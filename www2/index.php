@@ -8,7 +8,7 @@
     <header>
       <h1>Contact Database</h1>
       <nav>
-	<div id ="menu"><a href="192.168.34.11"><h2>Enter Details</h2></a></div>
+	<div id ="menu"><a href="http://192.168.34.11"><h2>Enter Details</h2></a></div>
 	<div id ="menu"><h2>Search Contacts</h2></a></div>
 </nav> 
 
