@@ -13,7 +13,7 @@ echo "CREATE DATABASE contactdb;" | mysql
 
 echo "CREATE USER 'dbuser'@'%' IDENTIFIED BY 'mypassword';" | mysql
 
-echo "GRANT ALL PRIVELEGES ON contactdb.* TO 'dbuser'@'%'" | mysql
+echo "GRANT ALL PRIVILEGES ON contactdb.* TO 'dbuser'@'%'" | mysql
 
 export MYSQL_PWD='mypassword'
 
