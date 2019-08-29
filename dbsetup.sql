@@ -1,8 +1,8 @@
 CREATE TABLE contactInfo (
  firstname varchar(255),
- lastname varhcar(255) NOT NULL,
+ lastname varchar(255) NOT NULL,
  phonenum varchar(20) NOT NULL,
- email varchar(80)
+ email varchar(80),
  PRIMARY KEY (phonenum)
  );
 
