@@ -7,7 +7,7 @@ echo "mysql-server mysql-server/root_password password $MYSQL_PWD" | debconf-set
 echo "mysql-server mysql-server/root_password_again password $MYSQL_PWD" | debconf-set-selections
 
 #install mySQL database
-apt-get -y -install mysql-server
+apt-get -y install mysql-server
 
 echo "CREATE DATABASE contactdb;" | mysql
 
