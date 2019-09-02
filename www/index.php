@@ -2,6 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Contact Database</title>
     <meta charset=utf-8>
   </head>
@@ -10,28 +11,29 @@
       <h1>Contact Database</h1>
       <nav>
 	<div id ="menu"><h2>Enter Details</h2></div>
-	<div id ="menu"><h2>Contact Information</h2></div>
-    <div id ="menu"><a href="http://192.168.34.12"><h2>Contact List</h2></a></div>
-      </nav> 
+        <div id ="menu"><a href="http://192.168.34.12"><h2>Contacts</h2></a></div>
+      </nav>
+    </header>
+      
         
-        
-        
-
-      <form action="index.php" method="post">
-	<fieldset>
-	  <legend>Enter Personal Information:</legend>
-	  First name:<br>
-	  <input type="text" name="firstname" ><br>
-	  Last name:<br>
-	  <input type="text" name="lastname" ><br>
-	  Phone Number:<br>
-	  <input type="text" name="phonenum" ><br>
-	  Email Address:<br>
-	  <input type="text" name="email"><br><br>
-	  <input type="submit" value="Submit" name="submit">
-	</fieldset>
-      </form>
-   
+      
+      <div id="main">
+        <form action="index.php" method="post">
+	  <fieldset>
+	    <legend>Enter Personal Information:</legend>
+	    First name:<br>
+	    <input type="text" name="firstname" ><br>
+	    Last name:<br>
+	    <input type="text" name="lastname" ><br>
+	    Phone Number:<br>
+	    <input type="text" name="phonenum" ><br>
+	    Email Address:<br>
+	    <input type="text" name="email"><br><br>
+	    <input type="submit" value="Submit" name="submit">
+	  </fieldset>
+        </form>
+      </div>
+      
 <?php
     if(isset($_POST['submit'])){
     ini_set('display_errors', true);
